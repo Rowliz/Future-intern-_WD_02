@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rowlings - Portfolio</title>
+    <style>
+        /* Reset default styles */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Body styling */
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgb(255, 255, 255);
+            color: #333;
+            padding-top: 20px;
+            /* Space for the fixed navbar */
+        }
+        /* Header section */
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        
+        header img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+        }
+        /* Navbar */
+        
+        nav {
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+        
+        nav a:hover {
+            color: #ff7f50;
+        }
+        /* Section styling */
+        
+        section {
+            padding: 50px 10%;
+            margin-top: 60px;
+            /* to avoid navbar overlap */
+        }
+        
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        section p {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .contact-info div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        /* Project Grid */
+        
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .project {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        /* Footer */
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        footer p {
+            font-size: 1rem;
+        }
+        /* Media Query for responsive design */
+        
+        @media (max-width: 768px) {
+            section {
+                padding: 20px 5%;
+            }
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .projects {
+                flex-direction: column;
+                align-items: center;
+            }
+            .project {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header>
+        <img src="Row.jpeg" alt="Your Name">
+        <h1>Rowlings Makokha</h1>
+        <p>Web Developer | Software Engineer | Ethical Hacker | </p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi! I'm Rowlings Makokha, a passionate web developer with expertise in front-end and back-end development. I craft visually appealing, easy-to-use websites that transform concepts into engaging, interactive online experiences.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Here are some of the skills I've acquired:</p>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="sugar.jpeg" alt="Project 1">
+                <h3>Kabras Sugar</h3>
+                <p>View of Kabras sugar website.</p>
+            </div>
+            <div class="project">
+                <img src="data.jpeg" alt="Project 2">
+                <h3>Control Room</h3>
+                <p>My control room.</p>
+
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with me via the information below:</p>
+        <div class="contact-info">
+            <div>
+                <h3>Email</h3>
+                <p>rowlingsmakokha@gmail.com</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>+254799900157</p>
+            </div>
+            <div>
+                <h3>X</h3>
+                <p><a href=" " target="_blank">Visit my profile</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rowlings. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
